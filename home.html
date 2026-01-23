@@ -1,11 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <div class="contact-info">
+          <span> +01 987 654 3210</span>
+          <span> +01 987 654 3210</span>
+        </div>
+        <div class="tagline">World's Fastest Online Shopping Destination</div>
+        <div class="top-right">
+          <a href="#">Help?</a>
+          <a href="#">Track Order</a>
+          <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#">Dollar <i class="fa-solid fa-chevron-down"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-content">
+        <a href="home.html" class="logo">
+          <div class="logo-icon">
+            <img src="assets/image/Link.png" alt="GrabitLogo" />
+          </div>
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Search Products..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Account</small
+              >
+              <span>Login</span>
+            </div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Wishlist</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Cart</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+    </header>
+
+    <nav id="navMenu">
+      <div class="nav-content">
+        <button class="categories-btn">☰ All Categories</button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Offers <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+        </ul>
+
+        <button class="location-selector">
+          <i class="fa-solid fa-location-dot"></i> New York
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </nav>
     
-</body>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-tag">Starting at $ 29.99</div>
+          <h1 class="hero-title">Explore fresh & juicy fruits</h1>
+          <button class="shop-btn">Shop Now →</button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
