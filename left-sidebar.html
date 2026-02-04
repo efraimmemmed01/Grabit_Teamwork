@@ -1,11 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <div class="contact-info">
+          <span> +01 987 654 3210</span>
+          <span> +01 987 654 3210</span>
+        </div>
+        <div class="tagline">World's Fastest Online Shopping Destination</div>
+        <div class="top-right">
+          <a href="#">Help?</a>
+          <a href="#">Track Order</a>
+          <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#">Dollar <i class="fa-solid fa-chevron-down"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-content">
+        <a href="home.html" class="logo">
+          <div class="logo-icon">
+            <img src="assets/image/grabitlogo.png" alt="GrabitLogo" />
+          </div>
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Search Products..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Account</small
+              >
+              <span>Login</span>
+            </div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Wishlist</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Cart</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <nav id="navMenu">
+      <div class="nav-content">
+        <button class="categories-btn">☰ All Categories</button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Offers <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+        </ul>
+
+        <button class="location-selector">
+          <i class="fa-solid fa-location-dot"></i> New York
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </nav>
+
+       <div class="category-container">
+      <div class="category-card card-fruits">
+        <div class="ccard">
+          <div class="cbadge">30%</div>
+          <div class="category-content">
+            <div class="icon">
+              <img src="assets/image/appleicon.png" alt="apple" />
+            </div>
+            <h3>Fruits</h3>
+            <p>320 items</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-card card-bakery">
+        <div class="ccard">
+          <div class="category-content">
+            <div class="icon">
+              <img src="assets/image/breadicon.png" alt="" />
+            </div>
+            <h3>Bakery</h3>
+            <p>65 items</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-card card-vegetables">
+        <div class="ccard">
+          <div class="cbadge">15%</div>
+          <div class="category-content">
+            <div class="icon">
+              <img src="assets/image/vegetableicon.png" alt="" />
+            </div>
+            <h3>Vegetables</h3>
+            <p>546 items</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-card card-dairy">
+        <div class="ccard">
+          <div class="cbadge">10%</div>
+          <div class="category-content">
+            <div class="icon">
+              <img src="assets/image/dairy.png" alt="" />
+            </div>
+            <h3>Dairy & Milk</h3>
+            <p>48 items</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-card card-snack">
+        <div class="ccard">
+          <div class="category-content">
+            <div class="icon">
+              <img src="assets/image/snack.png" alt="" />
+            </div>
+            <h3>Snack & Spice</h3>
+            <p>59 items</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-card card-juice">
+        <div class="ccard">
+          <div class="category-content">
+            <div class="icon">
+              <img src="assets/image/juice.png" alt="apple" />
+            </div>
+            <h3>Juice & Drinks</h3>
+            <p>845 items</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>
