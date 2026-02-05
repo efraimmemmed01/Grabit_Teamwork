@@ -1,11 +1,430 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <div class="contact-info">
+          <span> +01 987 654 3210</span>
+          <span> +01 987 654 3210</span>
+        </div>
+        <div class="tagline">World's Fastest Online Shopping Destination</div>
+        <div class="top-right">
+          <a href="#">Help?</a>
+          <a href="#">Track Order</a>
+          <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#">Dollar <i class="fa-solid fa-chevron-down"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-content">
+        <a href="home.html" class="logo">
+          <div class="logo-icon">
+            <img src="assets/image/grabitlogo.png" alt="GrabitLogo" />
+          </div>
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Search Products..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Account</small
+              >
+              <span>Login</span>
+            </div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Wishlist</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Cart</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <nav id="navMenu">
+      <div class="nav-content">
+        <button class="categories-btn">☰ All Categories</button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="home.html"
+              >Home <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="about.html"
+              >About <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="product.html"
+              >Products <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="blog.html"
+              >Blog <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="fashion.html"
+              >Fashion <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="left-sidebar.html"
+              >Shop <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="wishlist.html"
+              >Wishlist <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+        </ul>
+
+        <button class="location-selector">
+          <i class="fa-solid fa-location-dot"></i> New York
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="videos-grid">
+            <div class="main-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/video/ilk 1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="side-videos">
+              <div class="small-video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/video/ilk 2.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="small-video">
+                <video autoplay muted loop playsinline>
+                  <source src="assets/video/lk 3.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-content">
+            <h1>Who We Are?</h1>
+            <p class="subtitle">
+              We’re here to serve only the best products for you. Enriching your
+              homes with the best essentials.
+            </p>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+            <p class="description">
+              Lorem Ipsum has survived not only five centuries, but also the
+              leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p class="stats-subtitle">
+          Customer service should not be a department. It should be the entire
+          company.
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Free Shipping</h3>
+            <p>Free shipping on all US order or order above $200</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Contact us 24 hours a day, 7 days a week</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-undo"></i>
+            </div>
+            <h3>30 Days Return</h3>
+            <p>Simply return it within 30 days for an exchange</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Payment Secure</h3>
+            <p>Contact us 24 hours a day, 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Video Background -->
+    <section class="testimonial">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/orta parallax.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="testimonial-content">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            WHEN I NEED TO FIND SOMETHING EVEN OBSCURE TO PLANT IN MY BACKYARD.
+            I KNOW I CAN GO TO GRABII TO FIND IT. THEY ARE TRULY THE BEST GARDEN
+            SHOP AROUND.
+          </p>
+          <p class="client-name">MORGAN FIELDS</p>
+          <p class="client-title">Plant Enthusiast</p>
+          <div class="quote-icon bottom">"</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-number">65K+</div>
+            <h3>Vendors</h3>
+            <p>Contrary to popular belief, Lorem is not simply random text.</p>
+          </div>
+
+          <div class="product-card">
+            <div class="product-number">$45B+</div>
+            <h3>Earnings</h3>
+            <p>Contrary to popular belief, Lorem is not simply random text.</p>
+          </div>
+
+          <div class="product-card">
+            <div class="product-number">25M+</div>
+            <h3>Sold</h3>
+            <p>Contrary to popular belief, Lorem is not simply random text.</p>
+          </div>
+
+          <div class="product-card">
+            <div class="product-number">70K+</div>
+            <h3>Products</h3>
+            <p>Contrary to popular belief, Lorem is not simply random text.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section with Videos -->
+    <section class="team">
+      <div class="container">
+        <h2>Our Team</h2>
+        <p class="stats-subtitle">Meet out expert team members.</p>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/video/ceo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Mariya Klinton</h4>
+            <p>CEO</p>
+          </div>
+
+          <div class="team-member">
+            <div class="member-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/video/1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>William Dalin</h4>
+            <p>Co-Founder</p>
+          </div>
+
+          <div class="team-member">
+            <div class="member-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/video/2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Emma Welson</h4>
+            <p>Manager</p>
+          </div>
+
+          <div class="team-member">
+            <div class="member-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/video/3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Benjamin Martin</h4>
+            <p>Leader</p>
+          </div>
+
+          <div class="team-member">
+            <div class="member-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/video/4.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h4>Amelia Martin</h4>
+            <p>Leader</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3 class="logo">Grabit</h3>
+            <p>
+              Grabit is the biggest market of grocery products. Get your daily
+              needs from our store.
+            </p>
+            <div class="app-buttons">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                alt="App Store"
+              />
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Category</h4>
+            <ul>
+              <li><a href="#">Dried Fruit</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Foods</a></li>
+              <li><a href="#">Fresh Fruit</a></li>
+              <li><a href="#">Tuber root</a></li>
+              <li><a href="#">Vegetables</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Secure payment</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Account</h4>
+            <ul>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">View Cart</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Become a Vendor</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p>2548 Broaddus Maple Court, Madisonville KY 4783, USA.</p>
+            <p>Phone: +00 9876543210</p>
+            <p>Email:example@email.com</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright © 2026 Grabii. All rights reserved.</p>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-apple-pay"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
