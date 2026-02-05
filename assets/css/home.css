@@ -353,7 +353,10 @@ nav {
   }
 
   .hamburger {
+    position:absolute;
+    right: 20px;
     display: flex;
+    z-index: 100;
   }
 
   .search-bar {
@@ -373,17 +376,17 @@ nav {
   nav {
     position: fixed;
     top: 0;
-    left: -100%;
+    right: -100%;
     width: 280px;
     height: 100vh;
     background: white;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     transition: left 0.3s;
-    z-index: 2000;
+    z-index:800;
   }
 
   nav.active {
-    left: 0;
+    right: 0;
   }
 
   .nav-content {
@@ -435,7 +438,7 @@ nav {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1500;
+  z-index: 100;
 }
 
 .overlay.active {
@@ -449,7 +452,7 @@ nav {
   justify-content: center;
   gap: 10px;
   padding: 16px 0;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 .category-card {
   flex: 0 0 auto;
@@ -602,7 +605,7 @@ p {
   .category-container {
     gap: 12px;
     padding: 12px 0;
-    margin-top: 55px;
+    margin-top: 30px;
   }
 
   .category-card {
@@ -958,5 +961,516 @@ p {
 
   .fresh-title {
     font-size: 42px;
+  }
+}
+
+
+
+/* ilkinin hissesi */
+/* arriv hissesi */
+.secdiv1 {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.text1 {
+  width: 410px;
+  height: 200px;
+}
+.text2 {
+  width: 410px;
+  height: 200px;
+}
+.text3 {
+  width: 410px;
+  height: 200px;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+.secdiv2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.Snack {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.Tasty {
+  width: 48%;
+  height: 300px;
+  background-image: url(/Grabit_Teamwork/assets/image/df840695640dea7b1d16e83e36ab7e99a8368a68\ \(1\).jpg);
+  background-size: cover;
+  transition: 1s;
+}
+.Tasty:hover {
+  scale: 1.03;
+}
+.Tasty1:hover {
+  scale: 1.03;
+}
+.tasbtn {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 5px;
+}
+.tasinfo {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 15px;
+}
+.infonun {
+  width: 200px;
+  height: 150px;
+}
+.btn1 {
+  width: 53px;
+  height: 22px;
+  background-color: rgba(75, 89, 102, 1);
+  border-radius: 5px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+}
+.btn2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  color: red;
+  background-color: #0a0a0a;
+  box-shadow: 1px 1px red;
+}
+.btn2 {
+  width: 101px;
+  height: 31px;
+  background-color: rgba(92, 175, 144, 1);
+  border-radius: 8px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  transition: 1s;
+}
+.Tasty1 {
+  width: 48%;
+  height: 300px;
+  background-image: url(/Grabit_Teamwork/assets/image/890fd90a38a96ac4c92cdae3b76e0d07408ebea8\ \(1\).jpg);
+  background-size: cover;
+  transition: 1s;
+}
+
+/* ship hissesi */
+.Shipping {
+  width: 100%;
+  height: 300px;
+  gap: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shipp {
+  width: 300px;
+  height: 198px;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  background-color: rgba(255, 255, 255, 1);
+  transition: 1s;
+}
+.shipp:hover {
+  scale: 1.05;
+  background-color: rgba(105, 105, 105, 0.295);
+  border: red solid 1px;
+  cursor: e-resize;
+}
+
+/* trend baslADI */
+
+.trend {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.line {
+  width: 300px;
+  height: 421px;
+  background-color: #00ff55;
+  border: 1px solid black;
+}
+.lines {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+.line1 {
+  width: 300px;
+  height: 421px;
+  background-image: url(/Grabit_Teamwork/assets/image/4b10898a4445dad6788bbf5ecb4044dd33749518\ \(1\).jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.zomm{
+  padding-top: 10px;
+   width: 300px;
+  height: 421px;
+  overflow: hidden;
+    transition: 0.4s;
+}
+.line1:hover {
+  scale: 1.05;
+}
+.linebtn {
+  width: 100px;
+  height: 31px;
+  background-color: #5caf90;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.lin2 {
+  width: 300px;
+  height: 421px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  transition: 0.5s;
+}
+.lin2:hover {
+  scale: 1.05;
+}
+
+.ine {
+  width: 290px;
+  height: 101px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ineone {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.nutmix {
+  width: 290px;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linebtn:hover {
+  cursor: pointer;
+  scale: 1.1;
+  color: red;
+  background-color: #0a0a0a;
+  box-shadow: 1px 1px red;
+}
+
+/* Latest hisseso */
+
+.Latest {
+  width: 100%;
+  height: 440px;
+}
+.market {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+.steps {
+  width: 220px;
+  height: 290px;
+}
+
+/* foter hissesi */
+
+footer {
+  width: 100%;
+  height: 400px;
+}
+.gra {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  gap: 10px;
+
+}
+.bit {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+}
+.bitt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 12px;
+    margin-right: 10px;
+}
+.cote {
+  width: 200px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+
+}
+.cote ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.comp {
+  width: 200px;
+  height: 350px;
+  background-color: #001aff;
+}
+.acco {
+  width: 200px;
+  height: 350px;
+  background-color: #001aff;
+}
+.cont {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.foicon {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 1);
+}
+.all {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.tiktok {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .deal-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .countdown {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.category-item,
+.product-card {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.product-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.product-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.product-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.product-card:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+/* responsivlik basladi */
+
+@media (max-width: 768px) {
+  .Snack {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+  .Tasty {
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+  }
+  .Tasty1 {
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* ship hissesi */
+
+@media (max-width: 768px) {
+  .Shipping {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 25px;
+  }
+  .shipp {
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trend {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 25px;
+  }
+
+  .line1 {
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .lin2 {
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Latest {
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+  }
+  .text3 {
+    display: none;
+  }
+
+  .market {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .gra {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+   .bit {
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+  }
+
+  .all {
+   display: none;
+  }  
+
+   .tiktok {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  } 
+  .tiktak {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+  }  
+  .tiktak:hover{
+   scale: 1.01;
   }
 }
