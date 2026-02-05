@@ -1,11 +1,235 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/left-sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <div class="contact-info">
+          <span> +01 987 654 3210</span>
+          <span> +01 987 654 3210</span>
+        </div>
+        <div class="tagline">World's Fastest Online Shopping Destination</div>
+        <div class="top-right">
+          <a href="#">Help?</a>
+          <a href="#">Track Order</a>
+          <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#">Dollar <i class="fa-solid fa-chevron-down"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-content">
+        <a href="home.html" class="logo">
+          <div class="logo-icon">
+            <img src="assets/image/Link.png" alt="GrabitLogo" />
+          </div>
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Search Products..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Account</small
+              >
+              <span>Login</span>
+            </div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Wishlist</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Cart</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+    </header>
+
+    <nav id="navMenu">
+      <div class="nav-content">
+        <button class="categories-btn">☰ All Categories</button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Offers <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+        </ul>
+
+        <button class="location-selector">
+          <i class="fa-solid fa-location-dot"></i> New York
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="shop">
+  <aside class="sidebar">
+    <img src="assets/image/Section.png"
+    <h3>Category</h3>
+    <ul>
+      <li>Dried Fruit</li>
+      <li>Cookies</li>
+      <li>Foods</li>
+    </ul>
+
+    <h3>Weight</h3>
+    <ul>
+      <li>2kg</li>
+      <li>10kg</li>
+    </ul>
+  </aside>
+
+  <section class="products">
+    <div class="top-bar">
+      <span>Showing products</span>
+      <select>
+        <option>Sort by</option>
+      </select>
+    </div>
+
+    <div class="product-grid">
+      <div class="card">
+        <img src="assets/image/Mixed Nuts Berries Pack.png" alt="Mixed Nuts Berries Pack">
+        <h4>Dried Fruit</h4>
+        <h4>Mixed Nuts Berries Pack</h4>
+        <p class="price">$56.00 <span>$45.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Multi Grain Combo Cookies.png" alt="Multi Grain Combo Cookies">
+        <h4>Cookies</h4>
+        <h4>Multi Grain Combo Cookies</h4>
+        <p class="price">$30.00 <span>$25.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Dates Value Fresh Pouch.png" alt="Dates Value Fresh Pouch">
+        <h4>Dried Fruit</h4>
+        <h4>Dates Value Fresh Pouch</h4>
+        <p class="price">$85.00 <span>$78.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Stick Fiber Masala Magic.png" alt="Stick Fiber Masala Magic">
+        <h4>Foods</h4>
+        <h4>Stick Fiber Masala Magic</h4>
+        <p class="price">$50.00 <span>$45.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Natural Hub Cherry Karonda.png" alt="Natural Hub Cherry Karonda">
+        <h4>Fresh Fruit</h4>
+        <h4>Natural Hub Cherry Karonda</h4>
+        <p class="price">$65.00 <span>$49.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Fresh Mango juice pack.png" alt="Fresh Mango juice pack">
+        <h4>Foods</h4>
+        <h4>Fresh Mango juice pack </h4>
+        <p class="price">$21.00 <span>$20.00</span></p>
+      </div>
+
+      <div class="card">
+        <img src="assets/image/Fresh Organic Ginger Pack.png" alt="Fresh Organic Ginger Pack">
+        <h4>Tuber root</h4>
+        <h4>Fresh Organic Ginger Pack </h4>
+        <p class="price">$3.00 <span>$2.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Natural Hub Cherry Karonda2.png" alt="Natural Hub Cherry Karonda">
+        <h4>Foods</h4>
+        <h4>Natural Hub Cherry Karonda</h4>
+        <p class="price">$65.00 <span>$49.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Fresh Mango juice pack2.png" alt="Fresh Mango juice pack">
+        <h4>Fresh Fruit</h4>
+        <h4>Fresh Mango juice pack</h4>
+        <p class="price">$21.00 <span>$20.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Sweet Corn.png" alt="Sweet Corn">
+        <h4>Vegetables</h4>
+        <h4>Sweet Corn</h4>
+        <p class="price">$8.00 <span>$6.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Fresh Organic Ginger Pack.png" alt="Fresh Organic Ginger Pack">
+        <h4>Tuber root</h4>
+        <h4>Fresh Organic Ginger Pack</h4>
+        <p class="price">$3.00 <span>$2.00</span></p>
+      </div>
+
+       <div class="card">
+        <img src="assets/image/Kamalam Fruit.png" alt="Kamalam Fruit">
+        <h4>Fresh Fruit</h4>
+        <h4>Kamalam Fruit</h4>
+        <p class="price">$17.00 <span>$15.00</span></p>
+      </div>
+      
+    </div>
+  </section>
+</div>
     
-</body>
+ 
+  </body>
 </html>
