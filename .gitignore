@@ -1,2 +1,7 @@
 .hintrc
 .vscode
+# Tailwind compile olunmuş CSS
+/dist/
+
+# Node.js bağımlılıqları
+/node_modules/
