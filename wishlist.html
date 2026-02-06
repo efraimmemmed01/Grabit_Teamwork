@@ -1,11 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/wishlist.css">
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="contact-info">
+        <span> +01 987 654 3210</span>
+        <span> +01 987 654 3210</span>
+      </div>
+      <div class="tagline">World's Fastest Online Shopping Destination</div>
+      <div class="top-right">
+        <a href="#">Help??</a>
+        <a href="#">Track Order</a>
+        <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#">Dollar <i class="fa-solid fa-chevron-down"></i> </a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <a href="home.html" class="logo">
+        <div class="logo-icon">
+          <img src="/assets/image/grabitlogo.png" alt="GrabitLogo" />
+        </div>
+      </a>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search Products..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="header-action">
+          <i class="fa-regular fa-user"></i>
+          <div>
+            <small style="display: block; font-size: 11px; color: #999">Account</small>
+            <span>Login</span>
+          </div>
+        </a>
+        <a href="#" class="header-action">
+          <i class="fa-regular fa-heart"></i>
+          <div>
+            <small style="display: block; font-size: 11px; color: #999">Wishlist</small>
+            <span>3-ITEMS</span>
+          </div>
+          <div class="badge">3</div>
+        </a>
+        <a href="#" class="header-action">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div>
+            <small style="display: block; font-size: 11px; color: #999">Cart</small>
+            <span>3-ITEMS</span>
+          </div>
+          <div class="badge">3</div>
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <nav id="navMenu">
+    <div class="nav-content">
+      <button class="categories-btn">☰ All Categories</button>
+
+      <ul class="nav-links">
+        <li>
+          <a href="home.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li>
+          <a href="about.html">About <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li>
+          <a href="product.html">Products <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li>
+          <a href="blog.html">Blog <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li>
+          <a href="fashion.html">Fashion <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li>
+          <a href="left-sidebar.html">Shop <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li>
+          <a href="wishlist.html">Wishlist <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+      </ul>
+
+      <button class="location-selector">
+        <i class="fa-solid fa-location-dot"></i> New York
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+    </div>
+  </nav> <!--? Nuraneden goturduyum bitdi navbar-->
+  <!--! ozumku baslayir -->
+
+  <!-- Wishlist Table -->
+  <section class="wish">
+    <div class="mt-[30px]">
+    <div class="max-w-[1200px] cd nisakmx-auto px-5 ">
+      <div class="py-4 border border-gray-200 flex justify-between items-center px-6">
+        <h2 class="text-xs text-[#4B5966]  font-medium">Wishlist</h2>
+        <p class="text-sm text-gray-600">
+          <a href="#" class="hover:text-emerald-500">Home</a>
+          <span class="text-emerald-500 mx-2">></span>
+          <span class="text-emerald-500">Wishlist</span>
+        </p>
+      </div>
+    </div>
+ 
+    <div class="kam">
+      <h1 class="text-xl font-bold mb-2 text-[#4B5966]">Product <span class="text-emerald-500">Wishlist</span></h1>
+      <p class="text-xs text-gray-500">Your product wish is our first priority.</p>
+    </div>
+<!-- bu orta hissedir -->
+    </div>
+   </div>  <!-- umumi general padding ucun uje son care -->
+  </section>
+
+      <!-- Table -->
+      <!-- Wishlist Table -->
+<section class="py-16 bg-gray-50">
+ <div class="max-w-[1400px] mx-auto px-5">
+  
+  <!-- Breadcrumb və başlıq -->
+  <div class="py-4 border border-gray-200 flex justify-between items-center mb-8 px-6 bg-white shadow-sm">
+    <h2 class="text-xl text-gray-500">Wishlist</h2>
     
+    <button class="px-6 py-3 bg-emerald-500 text-white font-medium rounded-5 hover:bg-emerald-600 transition text-sm">
+      Shop Now
+    </button>
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- Wishlist Table -->
+   <div class="overflow-x-auto shadow-[rgba(0,0,0,0.24)_0px_3px_8px] rounded-lg bg-white">
+  <table class="w-full border border-gray-200 rounded-lg">
+    <thead>
+      <tr class="bg-emerald-50 border-b border-emerald-200">
+        <th class="px-6 py-3 text-left text-xs font-semibold text-emerald-600 uppercase tracking-wider border-r border-emerald-200 hidden lg:table-cell">ID</th>
+        <th class="px-6 py-3 text-left text-xs font-semibold text-emerald-600 uppercase tracking-wider border-r border-emerald-200">Image</th>
+        <th class="px-6 py-3 text-left text-xs font-semibold text-emerald-600 uppercase tracking-wider border-r border-emerald-200">Name</th>
+        <th class="px-6 py-3 text-left text-xs font-semibold text-emerald-600 uppercase tracking-wider border-r border-emerald-200 hidden lg:table-cell">Date</th>
+        <th class="px-6 py-3 text-left text-xs font-semibold text-emerald-600 uppercase tracking-wider border-r border-emerald-200">Price</th>
+        <th class="px-6 py-3 text-left text-xs font-semibold text-emerald-600 uppercase tracking-wider border-r border-emerald-200">Status</th>
+        <th class="px-6 py-3 text-left text-xs font-semibold text-emerald-600 uppercase tracking-wider">Actions</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <!-- Row 1 -->
+      <tr class="hover:bg-gray-50 transition">
+        <td class="px-6 py-4 text-sm text-gray-700 hidden lg:table-cell">1</td>
+        <td class="px-6 py-4">
+          <img src="https://ae01.alicdn.com/kf/Hcb3ca40c47ff49a682a9419b311be062T.jpg" class="w-14 h-14 object-cover rounded">
+        </td>
+        <td class="px-6 py-4 text-sm text-gray-800 font-medium">Women's wallet Hand Purse</td>
+        <td class="px-6 py-4 text-sm text-gray-500 hidden lg:table-cell">22/01/2025</td>
+        <td class="px-6 py-4 text-sm font-semibold text-gray-800">$70</td>
+        <td class="px-6 py-4">
+          <span class="text-emerald-500 text-sm font-medium">Available</span>
+        </td>
+        <td class="px-6 py-4">
+          <div class="flex gap-2">
+            <button class="bg-emerald-500 text-white w-8 h-8 rounded flex items-center justify-center hover:bg-emerald-600 transition">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+            <button class="bg-gray-700 text-white w-8 h-8 rounded flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="fas fa-times text-xs"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+      <!-- Row 2 və 3 eyni qaydada, ID və Date td-lərinə də əlavə et -->
+      <tr class="hover:bg-gray-50 transition">
+        <td class="px-6 py-4 text-sm text-gray-700 hidden lg:table-cell">2</td>
+        <td class="px-6 py-4">
+          <img src="https://www.byrdie.com/thmb/tnhtTMtR78M6E72iYIKm1kPSX0E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/maxmaraolandawoolbeltedcoat-3f6382d1d0464e15b09b839a86dc981b.png" class="w-14 h-14 object-cover rounded">
+        </td>
+        <td class="px-6 py-4 text-sm text-gray-800 font-medium">Coat</td>
+        <td class="px-6 py-4 text-sm text-gray-500 hidden lg:table-cell">22/01/2025</td>
+        <td class="px-6 py-4 text-sm font-semibold text-gray-800">$80</td>
+        <td class="px-6 py-4">
+          <span class="text-gray-400 text-sm font-medium">Out Of Stock</span>
+        </td>
+        <td class="px-6 py-4">
+          <div class="flex gap-2">
+            <button class="bg-emerald-500 text-white w-8 h-8 rounded flex items-center justify-center hover:bg-emerald-600 transition">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+            <button class="bg-gray-700 text-white w-8 h-8 rounded flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="fas fa-times text-xs"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+      <!-- Row 3 -->
+      <tr class="hover:bg-gray-50 transition">
+        <td class="px-6 py-4 text-sm text-gray-700 hidden lg:table-cell">3</td>
+        <td class="px-6 py-4">
+          <img src="https://image.made-in-china.com/202f0j00QdWiYnECfNzm/Fashion-Jewelry-Luxury-Pearl-Pendientes-Alloy-Huggie-Hoop-Drop-Earrings.jpg" class="w-14 h-14 object-cover rounded">
+        </td>
+        <td class="px-6 py-4 text-sm text-gray-800 font-medium">Earring</td>
+        <td class="px-6 py-4 text-sm text-gray-500 hidden lg:table-cell">22/01/2025</td>
+        <td class="px-6 py-4 text-sm font-semibold text-gray-800">$12</td>
+        <td class="px-6 py-4">
+          <span class="text-emerald-500 text-sm font-medium">Available</span>
+        </td>
+        <td class="px-6 py-4">
+          <div class="flex gap-2">
+            <button class="bg-emerald-500 text-white w-8 h-8 rounded flex items-center justify-center hover:bg-emerald-600 transition">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+            <button class="bg-gray-700 text-white w-8 h-8 rounded flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="fas fa-times text-xs"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <!-- cedvel bitti -->
+ 
+  <section class="py-15 bg-white ">
+    <div class="max-w-[1400px] mx-auto px-5">
+      <div class="zibus">
+        <h2 class="text-2xl font-bold mb-2">New <span class="text-emerald-500">Arrivals</span></h2>
+        <p class="text-xs  text-gray-500">Browse The Collection of Top Products.</p>
+      </div>
+  
+      <!-- Product Cards Gridledik  -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 pb-12 ">
+  
+        <!-- Card 1 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 relative group">
+          <p class="absolute top-3 right-3 bg-[#FF6B7A] text-white text-[10px] font-bold rounded-[4px] shadow-sm z-10 tracking-wide flex items-center justify-center w-10 h-6">SALE</p>
+  
+          <div class="relative bg-gray-50 p-6 flex items-center justify-center h-48">
+            <img src="https://d3pllp7nz3wmw5.cloudfront.net/product_images/33960080102_XL.jpg" alt="Mixed Nuts Berries Pack"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+  
+          <div class="p-4">
+            <p class="text-gray-400 text-xs mb-1 uppercase tracking-wide">Style That Lasts</p>
+            <h3 class="text-gray-800 font-medium text-sm mb-2 line-clamp-2">Perfect shine, all day</h3>
+  
+            <div class="flex items-center gap-0.5 mb-2">
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-gray-300 text-xs"></i>
+            </div>
+  
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold text-gray-800">$56.00</span>
+              <span class="text-sm text-gray-400 line-through">$45.00</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 relative group">
+        <p class="absolute top-3 right-3 bg-[#FF6B7A] text-white text-[10px] font-bold rounded-[4px] shadow-sm z-10 tracking-wide flex items-center justify-center w-10 h-6">SALE</p>
+          <div class="relative bg-gray-50 p-6 flex items-center justify-center h-48">
+            <img src="https://i.pinimg.com/originals/3e/7b/ef/3e7bef1d44d40505d4eb4ec4b20751bc.jpg" alt="Multi Grain Combo Cookies"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+  
+          <div class="p-4">
+            <p class="text-gray-400 text-xs mb-1 uppercase tracking-wide">Women coat</p>
+            <h3 class="text-gray-800 font-medium text-sm mb-2 line-clamp-2">Warmth meets style</h3>
+  
+            <div class="flex items-center gap-0.5 mb-2">
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-gray-300 text-xs"></i>
+              <i class="fa fa-star text-gray-300 text-xs"></i>
+            </div>
+  
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold text-gray-800">$30.00</span>
+              <span class="text-sm text-gray-400 line-through">$26.00</span>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">10kg</p>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 relative group">
+          <p class="absolute top-3 right-3 bg-[#FF6B7A] text-white text-[10px] font-bold rounded-[4px] shadow-sm z-10 tracking-wide flex items-center justify-center w-10 h-6">SALE</p>
+  
+          <div class="relative bg-gray-50 p-6 flex items-center justify-center h-48">
+            <img src="https://thewomenleaders.com/wp-content/uploads/2023/11/Global-Womens-Luxury-Footwear-Market-Surges-to-305-Billion-in-2023.png" alt="Fresh Mango Juice Pack"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+  
+          <div class="p-4">
+            <p class="text-gray-400 text-xs mb-1 uppercase tracking-wide">Step Bold</p>
+            <h3 class="text-gray-800 font-medium text-sm mb-2 line-clamp-2">Comfortable every step</h3>
+  
+            <div class="flex items-center gap-0.5 mb-2">
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-gray-300 text-xs"></i>
+            </div>
+  
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold text-gray-800">$65.00</span>
+              <span class="text-sm text-gray-400 line-through">$45.00</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 relative group">
+  
+          <div class="relative bg-gray-50 p-6 flex items-center justify-center h-48">
+            <img src="https://www.mjbale.com/cdn/shop/files/COA104W21_Camel_2.jpg?v=1757914864" alt="Dates Value Fresh Pouch"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+  
+          <div class="p-4">
+            <p class="text-gray-400 text-xs mb-1 uppercase tracking-wide">Sharp Fit </p>
+            <h3 class="text-gray-800 font-medium text-sm mb-2 line-clamp-2">Classic yet modern</h3>
+  
+            <div class="flex items-center gap-0.5 mb-2">
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-gray-300 text-xs"></i>
+              <i class="fa fa-star text-gray-300 text-xs"></i>
+            </div>
+  
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold text-gray-800">$85.00</span>
+              <span class="text-sm text-gray-400 line-through">$78.00</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 relative group">
+ <p class="absolute top-3 right-3  bg-emerald-500 text-white text-[10px] font-bold rounded-[4px] shadow-sm z-10 tracking-wide flex items-center justify-center w-10 h-6">NEW</p>
+  
+          <div class="relative bg-gray-50 p-6 flex items-center justify-center h-48">
+            <img src="https://hushyrushy.com/cdn/shop/files/jimmy_mock2_e1763a4d-ef28-4715-9b64-9a352a40c566.jpg?v=1754814009" alt="Stick Fiber Masala Magic"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+  
+          <div class="p-4">
+            <p class="text-gray-400 text-xs mb-1 uppercase tracking-wide">Everyday Tee</p>
+            <h3 class="text-gray-800 font-medium text-sm mb-2 line-clamp-2">Soft & stylish basics</h3>
+  
+            <div class="flex items-center gap-0.5 mb-2">
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-gray-300 text-xs"></i>
+            </div>
+  
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold text-gray-800">$25.00</span>
+              <span class="text-sm text-gray-400 line-through">$45.00</span>
+            </div>
+
+          </div>
+        </div>
+  
+        <!-- Card 6 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 relative group">
+          <p class="absolute top-3 right-3 bg-[#FF6B7A] text-white text-[10px] font-bold rounded-[4px] shadow-sm z-10 tracking-wide flex items-center justify-center w-10 h-6">SALE</p>
+  
+          <div class="relative bg-gray-50 p-6 flex items-center justify-center h-48">
+            <img src="https://images.riverisland.com/image/upload/t_ProductImagePortraitMedium/f_auto/q_auto/457320_main" alt="coat for child"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+  
+          <div class="p-4">
+            <p class="text-gray-400 text-xs mb-1 uppercase tracking-wide">Cozy Fun</p>
+            <h3 class="text-gray-800 font-medium text-sm mb-2 line-clamp-2">Warmth for little ones</h3>
+  
+            <div class="flex items-center gap-0.5 mb-2">
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+              <i class="fa fa-star text-yellow-400 text-xs"></i>
+            </div>
+  
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold text-gray-800">$42.00</span>
+              <span class="text-sm text-gray-400 line-through">$38.00</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section> 
+
+  <!--! ozumku bitdi -->
+  <!--? footer Ilkinden goturduyum baslayir -->
+
+  <footer class="w-full bg-gray-100 mx-10 border-t border-gray-300 mg ">
+    <div class="gra">
+      <div class="bit">
+        <div class="bitt">
+          <img src="/assets/image/1cd5030c6543dd793ba6983d07fd7d95779e8adb (1).png" width="100px" alt="1cd">
+          <p>Grabit is the biggest market of grocery products
+            Get your daily needs from our store.</p>
+          <div>
+            <img src="/assets/image/9b984d8c78222971cde2cf32ce6baeba2bedefa2 (1).png" width="140px" height="40px"
+              alt="984">
+            <img src="/assets/image/4bf6e94388ab1f53cc6843297ab3609a1740d99f (1).png" width="140px" height="40"
+              alt="984">
+          </div>
+        </div>
+      </div>
+      <div class="cote">
+        <h1>Category</h1>
+        <ul>
+          <li>Dried Fruit</li>
+          <li>Cookies</li>
+          <li>Foods</li>
+          <li>Fresh Fruit</li>
+          <li>Tuber root</li>
+          <li>Vegetables</li>
+        </ul>
+      </div>
+      <div class="cote">
+        <h1>Category</h1>
+        <ul>
+          <li>Dried Fruit</li>
+          <li>Cookies</li>
+          <li>Foods</li>
+          <li>Fresh Fruit</li>
+          <li>Tuber root</li>
+          <li>Vegetables</li>
+        </ul>
+      </div>
+
+      <div class="cote">
+        <h1>Category</h1>
+        <ul>
+          <li>Dried Fruit</li>
+          <li>Cookies</li>
+          <li>Foods</li>
+          <li>Fresh Fruit</li>
+          <li>Tuber root</li>
+          <li>Vegetables</li>
+        </ul>
+      </div>
+
+      <div class="cont">
+        <h1>Contact</h1>
+        <div><img src="/assets/image/Icon (8).png" alt="8">2548 Broaddus Maple Court, Madisonville KY
+          4783, USA.</div>
+        <div><img src="/assets/image/Icon (9).png" alt="8">+00 9876543210</div>
+        <div><img src="/assets/image/Icon (10).png" alt="8">example@email.com</div>
+        <div>
+         <span> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-square-twitter"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-instagram"></i></span>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+    <div class="foicon">
+      <div class="all">
+        <h1 style="font-size: 17px;">Copyright © Grabit all rights reserved. Powered by Grabit.</h1>
+      </div>
+      <div class="tiktok"><img class="tiktak" src="/assets/image/587c250de43f60f20d2d0b1d46520a9ad9092a7e (1).png"
+          alt="58"></div>
+    </div>
+  </footer>
 </body>
+
 </html>
+
+
+
