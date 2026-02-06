@@ -1,11 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/output.css">
 </head>
+
 <body>
-    
+
+
+
+  <div
+    class="relative bg-no-repeat bg-center bg-cover z-50 opacity-100 before:absolute before:inset-0 before:bg-black/70"
+    style="background-image: url(img/venezia-1-min.jpg)">
+    <header class="bg-transparent flex py-2 px-6 sm:px-10 min-h-[84px] tracking-wide z-50 relative">
+      <div class="flex flex-wrap items-center justify-between gap-5 w-full max-w-screen-xl mx-auto">
+        <a href="javascript:void(0)" class="max-sm:hidden"><img src="img/logo.png.png" alt="logo" class="w-36" /></a>
+        <a href="javascript:void(0)" class="hidden max-sm:block"><img src="img/logo.png.png" alt="logo"
+            class="w-[100px] h-[50px]" /></a>
+
+        <div id="collapseMenu"
+          class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
+          <button id="toggleClose"
+            class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border border-gray-200 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                data-original="#000000"></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                data-original="#000000"></path>
+            </svg>
+          </button>
+          <ul
+            class="lg:flex gap-x-6 max-lg:space-y-3 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+            <li class="mb-6 hidden max-lg:block">
+              <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui-white.svg" alt="logo"
+                  class="w-36" />
+              </a>
+            </li>
+            <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-2">
+              <a href='home.html'
+                class="text-base text-slate-200 hover:text-white block font-semibold">Home</a>
+            </li>
+            <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-2">
+              <a href='about.hmtl' class="text-base text-slate-200 hover:text-white block font-semibold">About</a>
+            </li>
+            <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-2">
+              <a href='card.html'
+                class="text-base text-slate-200 hover:text-white block font-semibold">Card</a>
+            </li>
+            <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-2">
+              <a href='left-sidebar.html'
+                class="text-base text-slate-200 hover:text-white block font-semibold">Sidebar</a>
+            </li>
+            <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-2">
+              <a href='product.html' class="text-base text-slate-200 hover:text-white block font-semibold">Product</a>
+            </li>
+            <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-2">
+              <a href='wishlist.html' class="text-base text-slate-200 hover:text-white block font-semibold">Wishlist</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-4 max-lg:ml-auto">
+          <button
+            class="px-6 py-3 text-base rounded-full font-medium tracking-wide text-white border-0 bg-emerald-600 hover:bg-emerald-700 transition-all cursor-pointer">Get
+            Started</button>
+
+          <button id="toggleOpen" class="lg:hidden cursor-pointer">
+            <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-col justify-center h-full items-center px-6 sm:px-10 py-10 lg:min-h-[calc(100vh-84px)]">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+          <h1 class="text-white md:text-5xl text-4xl font-bold mb-6 !leading-tight">
+            Boost Your Brand with Smart <span class="text-emerald-600">Marketing Strategies</span></h1>
+
+
+          <div class="max-w-xl mx-auto mt-12">
+            <div class="bg-white flex px-6 py-4 border-2 rounded-full overflow-hidden opacity-25  border-emerald-600">
+              <input type='email' placeholder='Search Something...'
+                class="w-full text-slate-900 outline-none text-base bg-transparent pr-4 " />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904"
+                class="w-5 cursor-pointer fill-gray-500">
+                <path
+                  d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="mt-12 flex items-center justify-center flex-wrap gap-4">
+            <button
+              class="px-6 py-3 text-base rounded-full font-medium tracking-wide text-white border-0 bg-emerald-600 hover:bg-emerald-700 transition-all cursor-pointer">Get
+              Started Today</button>
+            <button
+              class="px-6 py-3 text-base rounded-full font-medium tracking-wide text-slate-900 border-0 bg-white hover:bg-purple-100 transition-all cursor-pointer">Our
+              Services</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <section class="flex flex-wrap gap-2 justify-center mb-[40px] mt-[20px]">
+      <div
+        class="bg-[#F7F7F7] flex flex-col justify-center items-center w-50 h-30 transform transition duration-300 hover:scale-105 rounded-2xl shadow-2xl">
+
+        <img class="w-12 h-12" src="img/c-1.png.png" alt="">
+        <h1 class="text-sm">Clothes</h1>
+        <p class="text-sm text-[#777777]">320 items</p>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col justify-center items-center w-50 h-30 transform transition duration-300 hover:scale-105 rounded-2xl shadow-2xl">
+        <img class="w-12 h-12" src="img/c-2.png.png" alt="">
+        <h1 class="text-sm">Watches</h1>
+        <p class="text-sm text-[#777777]">65 items</p>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col justify-center items-center w-50 h-30 transform transition duration-300 hover:scale-105 rounded-2xl shadow-2xl">
+        <img class="w-12 h-12" src="img/c-3.png.png" alt="">
+        <h1 class="text-sm">Dresses</h1>
+        <p class="text-sm text-[#777777]">220 items</p>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col justify-center items-center w-50 h-30 transform transition duration-300 hover:scale-105 rounded-2xl shadow-2xl">
+        <img class="w-12 h-12" src="img/c-4.png.png" alt="">
+        <h1 class="text-sm">Glasses</h1>
+        <p class="text-sm text-[#777777]">70 items</p>
+      </div>
+
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col justify-center items-center w-50 h-30 transform transition duration-300 hover:scale-105 rounded-2xl shadow-2xl">
+        <img class="w-12 h-12" src="img/c-5.png.png" alt="">
+        <h1 class="text-sm">Hat & Caps</h1>
+        <p class="text-sm text-[#777777]">110 items</p>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col justify-center items-center w-50 h-30 transform transition duration-300 hover:scale-105 rounded-2xl shadow-2xl">
+        <img class="w-12 h-12" src="img/c-6.png.png" alt="">
+        <h1 class="text-sm">Shorts</h1>
+        <p class="text-sm text-[#777777]">57 items</p>
+      </div>
+
+
+
+
+    </section>
+
+    <section class="flex justify-center h-[100px]">
+      <h1 class="text-cyan-950 font-bold text-5xl mb ">Day Of The Deal</h1>
+    </section>
+
+    <section class="flex justify-center flex-wrap gap-15 mb-5">
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45 object-contain" src="img/veneziakit-1-min.jpg" alt="">
+        <div class="flex flex-col justify-start p-2  ">
+          <p>Sport</p>
+          <p>Venezia Kit</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1 ">
+          <p class="font-bold text-[#4B5966] ">$49.99</p>
+          <p class="line-through text-[#777777] ">$70</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45" src="img/trasher.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Thrasher</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1 ">
+          <p class="font-bold text-[#4B5966] ">$49.99</p>
+          <p class="line-through text-[#777777] ">$85</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45" src="img/vans.jpg" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Vans</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1">
+          <p class="font-bold text-[#4B5966] ">$70</p>
+          <p class="line-through text-[#777777] ">$110</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45" src="img/barca.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Barcelona Kit</p>
+        </div>
+        <div class="flex justify-start p-2  gap-1">
+          <p class="font-bold text-[#4B5966] ">$120</p>
+          <p class="line-through text-[#777777] ">$180</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45" src="img/cactus.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Cactus Jack</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1 ">
+          <p class="font-bold text-[#4B5966] ">$65</p>
+          <p class="line-through text-[#777777] ">$92</p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="bg-gradient-to-r from-indigo-200 to-purple-900">
+      <div class="relative overflow-hidden">
+        <div class="max-w-screen-xl mx-auto py-16 lg:py-28 px-6 sm:px-8">
+          <div class="relative z-10 max-lg:text-center mr-">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white !leading-tight">
+              Welcome to
+              <span class="text-indigo-600 block"> Premium Delights</span>
+            </h1>
+            <div class="max-w-md md:max-w-3xl mx-auto mt-6">
+
+
+
+              <div class="mt-12 lg:mt-16 flex flex-wrap max-lg:justify-center gap-6">
+                <div class="rounded-md shadow-sm">
+                  <button
+                    class="w-full flex items-center justify-center px-8 py-4 font-medium text-base tracking-wide rounded-full text-slate-900 bg-white hover:bg-indigo-100 transition border-0 cursor-pointer">
+                    Get Started
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="w-full flex items-center justify-center px-8 py-4 font-medium text-base tracking-wide rounded-full text-white bg-indigo-500 hover:bg-indigo-400 transition border-0 cursor-pointer">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="img/wp4530984-selena-gomez-puma-wallpapers.jpg" alt="hero-img" />
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <section class="flex   justify-center flex-wrap  gap-10  mt-7">
+
+
+
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col   justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl ">
+        <img class="w-70 h-45 object-contain" src="img/cap5.png" alt="">
+        <div class="flex flex-col justify-start p-2  ">
+          <p>Sport</p>
+          <p>Nike Cap</p>
+        </div>
+
+        <div class="flex justify-start p-2 gap-1 ">
+          <p class="font-bold text-[#4B5966] ">$49.99</p>
+          <p class="line-through text-[#777777] ">$70</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45 object-contain" src="img/nike2.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Nike Cap</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1 ">
+          <p class="font-bold text-[#4B5966] ">$49.99</p>
+          <p class="line-through text-[#777777] ">$85</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45 object-contain" src="img/nike3.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Nike Cap</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1">
+          <p class="font-bold text-[#4B5966] ">$70</p>
+          <p class="line-through text-[#777777] ">$110</p>
+        </div>
+      </div>
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45 object-contain" src="img/cap11.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Nike Cap</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1">
+          <p class="font-bold text-[#4B5966] ">$70</p>
+          <p class="line-through text-[#777777] ">$110</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <section class="flex   justify-center flex-wrap  gap-10  mt-7">
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col   justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl ">
+        <img class="w-70 h-45 object-contain" src="img/barcelona10.png" alt="">
+        <div class="flex flex-col justify-start p-2  ">
+          <p>Sport</p>
+          <p>Barcelona Kit</p>
+        </div>
+
+        <div class="flex justify-start p-2 gap-1 ">
+          <p class="font-bold text-[#4B5966] ">$49.99</p>
+          <p class="line-through text-[#777777] ">$70</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45 object-contain" src="img/barcelona1.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Barcelona Kit</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1 ">
+          <p class="font-bold text-[#4B5966] ">$49.99</p>
+          <p class="line-through text-[#777777] ">$85</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45 object-contain" src="img/barcelona2.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Barcelona Kit</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1">
+          <p class="font-bold text-[#4B5966] ">$70</p>
+          <p class="line-through text-[#777777] ">$110</p>
+        </div>
+      </div>
+      <div
+        class="bg-[#F7F7F7] flex flex-col  justify-center w-50 h-80 rounded-2xl transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-70 h-45 object-contain" src="img/barcelona4.png" alt="">
+        <div class="flex flex-col justify-start p-2 ">
+          <p>Sport</p>
+          <p>Barcelona Kit</p>
+        </div>
+        <div class="flex justify-start p-2 gap-1">
+          <p class="font-bold text-[#4B5966] ">$70</p>
+          <p class="line-through text-[#777777] ">$110</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="flex justify-center mt-10 text-center">
+      <h1 class="font-bold text-emerald-600 text-5xl">Make your style better with US</h1>
+    </section>
+
+
+
+
+    <section class="flex justify-center  gap-[34px] mt-15 ">
+      
+      <div>
+        <img class="w-70 h-99 rounded-2xl  transform transition duration-300 hover:scale-105 " src="img/vans1.jpg"
+          alt="">
+
+      </div>
+
+      <div>
+        <img class="w-70 h-99 rounded-2xl shadow-2xl transform transition duration-300 hover:scale-105"
+          src="img/vans2.jpg" alt="">
+
+      </div>
+
+      <div>
+        <img class="w-70 h-99 rounded-2xl shadow-2xl transform transition duration-300 hover:scale-105 "
+          src="img/vans3.jpg" alt="">
+
+      </div>
+    </section>
+
+
+
+    <section class="flex flex-wrap justify-center items-center gap-[24px] mt-25 mb-10">
+      <div
+        class=" gap-1 w-[250px] h-[170px] flex flex-col justify-center items-center text-center border-1 border-gray-200 transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-10 h-10" src="img/car1.png" alt="">
+        <h1 class="text-[18px] font-bold">Free Shipping</h1>
+        <p class="text-[14px] text-[#777777]">Free shipping on all US order or order above
+          $200</p>
+      </div>
+
+      <div class=" w-[250px] h-[170px] flex flex-col justify-center items-center text-center border-1 border-gray-200 transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-10 h-10" src="img/car2.png" alt="">
+        <h1 class="text-[18px] font-bold">24X7 Support</h1>
+        <p class="text-[14px] text-[#777777]">Contact us 24 hours a day, 7 days a week</p>
+      </div>
+
+      <div class="w-[250px] h-[170px] flex flex-col justify-center items-center text-center border-1 border-gray-200 transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-10 h-10" src="img/car3.png" alt="">
+        <h1 class="text-[18px] font-bold">30 Days Return</h1>
+        <p class="text-[14px] text-[#777777]">Simply return it within 30 days for an
+          exchange</p>
+      </div>
+
+      <div class="w-[250px] h-[170px] flex flex-col justify-center items-center text-center border-1 border-gray-200 transform transition duration-300 hover:scale-105 shadow-2xl">
+        <img class="w-10 h-10" src="img/car4.png" alt="">
+        <h1 class="text-[18px] font-bold">Payment Secure</h1>
+        <p class="text-[14px] text-[#777777]">Contact us 24 hours a day, 7 days a week</p>
+      </div>
+    </section>
+
+
+
+  <section>
+      <div class="relative before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-60 before:z-10 mt-20">
+      <img src="img/travis-scott-american-rapper-nike-3840x2160-7240.jpg" alt="Banner Image" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="px-6 py-16">
+        <div class="relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center">
+          <h2 class="text-4xl font-semibold mb-20 text-center text-white">Application Metrics</h2>
+          <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 max-lg:gap-12">
+            <div class="text-center">
+              <h3 class="text-white text-4xl font-semibold">5.4M+</h3>
+              <div class="mt-6">
+                <h6 class="text-base text-white font-medium">Total Users</h6>
+                <p class="leading-relaxed text-[15px] text-slate-300 mt-3">The total number of registered users on the platform.</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="text-white text-4xl font-semibold">$80K</h3>
+              <div class="mt-6">
+                <h6 class="text-base text-white font-medium">Revenue</h6>
+                <p class="leading-relaxed text-[15px] text-slate-300 mt-3">The total revenue generated by the application.</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="text-white text-4xl font-semibold">100K</h3>
+              <div class="mt-6">
+                <h6 class="text-base text-white font-medium">Engagement</h6>
+                <p class="leading-relaxed text-[15px] text-slate-300 mt-3">The level of user engagement with the application's content and features.</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="text-white text-4xl font-semibold">99.9%</h3>
+              <div class="mt-6">
+                <h6 class="text-base text-white font-medium">Server Uptime</h6>
+                <p class="leading-relaxed text-[15px] text-slate-300 mt-3">The percentage of time the server has been operational and available.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="mt-10">
+  <div class="bg-gray-50 p-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-12 items-center max-w-6xl max-lg:max-w-2xl max-sm:max-w-sm mx-auto">
+        <div>
+          <h2 class="text-4xl font-bold text-emerald-600 uppercase mb-6">Blogs</h2>
+          <h2 class="text-3xl font-extrabold text-slate-900 uppercase leading-10">Discover Our Letest Blog Posts</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:col-span-2 ">
+          <div class="cursor-pointer overflow-hidden group transform ">
+            <div class="aspect-[24/14] rounded-md bg-white overflow-hidden">
+            <img src="img/rose2.jpg" alt="Blog Post 1" class="w-full h-full object-cover object-center " />
+            </div>
+            <div class="py-6">
+              <span class="text-sm block text-slate-400 font-medium mb-2">10 FEB 2023 | BY ROSE</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-all">A Guide to Igniting Your Imagination</h3>
+            </div>
+          </div>
+
+          <div class="cursor-pointer overflow-hidden group ">
+            <div class="aspect-[24/14] rounded-md bg-white overflow-hidden">
+            <img src="img/dua1.jpg" alt="Blog Post 2" class="w-full h-full object-cover object-top " />
+            </div>
+            <div class="py-6">
+              <span class="text-sm block text-slate-400 font-medium mb-2">7 JUN 2023 | BY DUA LIPA</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-all">Hacks to Supercharge Your Day</h3>
+            </div>
+          </div>
+
+          <div class="cursor-pointer overflow-hidden group ">
+            <div class="aspect-[24/14] rounded-md bg-white overflow-hidden">
+            <img src="img/suarez.jpg.crdownload" alt="Blog Post 3" class="w-full h-full object-cover object-top " />
+            </div>
+            <div class="py-6">
+              <span class="text-sm block text-slate-400 font-medium mb-2">5 OCT 2023 | BY LUIS SUAREZ</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-all">Trends and Predictions</h3>
+            </div>
+          </div>
+
+          <div class="cursor-pointer overflow-hidden group ">
+            <div class="aspect-[24/14] rounded-md bg-white overflow-hidden">
+            <img src="img/kendall1.jpg" alt="Blog Post 3" class="w-full h-full object-cover object-top " />
+            </div>
+            <div class="py-6">
+              <span class="text-sm block text-slate-400 font-medium mb-2">10 DEC 2023 | BY KENDALL JENNER</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-all">Innovators Changing the Game</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="w-full bg-slate-300">
+      <div class="py-16 px-6">
+        <div class="max-w-screen-xl mx-auto">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10">
+            <div>
+              <div class="border-b border-gray-400 pb-3 mb-4">
+                <h3 class="text-emerald-600 text-sm font-medium">Latest Updates</h3>
+              </div>
+              <ul class="space-y-2">
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Pro Features</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Laptop Series</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Studio Models</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Go Edition</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">AI Copilot</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Windows AI Tools</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Discover Products</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Windows Apps</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Surface Updates</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="border-b border-gray-400 pb-3 mb-4">
+                <h3 class="text-emerald-600 text-sm font-medium">Shop & Services</h3>
+              </div>
+              <ul class="space-y-2">
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Your Profile</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Download Center</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Store Support</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Return Policy</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Track Orders</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Certified Refurbished</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="border-b border-gray-400 pb-3 mb-4">
+                <h3 class="text-emerald-600 text-sm font-medium">Learning</h3>
+              </div>
+              <ul class="space-y-2">
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Education Programs</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Devices for Schools</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Teams for Education</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Microsoft 365</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">School Purchases</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Teacher Training</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Student Deals</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Azure for Students</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Learning Pathways</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Educator Center</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="border-b border-gray-400 pb-3 mb-4">
+                <h3 class="text-sm font-medium text-emerald-600">Developer Resources</h3>
+              </div>
+              <ul class="space-y-2">
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Azure Services</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Developer Hub</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Documentation</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Learning Resources</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Tech Community</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Azure Marketplace</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">AppSource</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="border-b border-gray-400 pb-3 mb-4">
+                <h3 class="text-emerald-600 text-sm font-medium">About Us</h3>
+              </div>
+              <ul class="space-y-2">
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Career Opportunities</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Our Story</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Company News</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Privacy Policy</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Investor Relations</a></li>
+                <li><a href="javascript:void(0)" class="text-slate-900 text-xs hover:text-emerald-600">Diversity & Inclusion</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-16 flex items-center gap-8 flex-wrap">
+            <div class="max-w-lg w-full">
+              <h3 class="text-emerald-600 text-sm font-medium">Download our app</h3>
+              <div class="mt-4 flex flex-wrap gap-4">
+                <button type="button"
+                  class="px-4 py-2 cursor-pointer inline-flex items-center rounded-md text-white text-sm text-left tracking-wider border-none outline-none bg-black hover:bg-[#222]">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 fill-white inline mr-2" viewBox="0 0 64 64">
+                    <path fill="#57cef3" d="M7 3v58l33-29z" data-original="#57cef3" />
+                    <path fill="#fff200" d="m36 32 8-10 15 10-15 10z" data-original="#fff200" />
+                    <path fill="#48ff48" d="M36 32 7 3h4l34 20z" data-original="#48ff48" />
+                    <path fill="#ff6c58" d="M36 32 7 61h4l34-20z" data-original="#ff6c58" />
+                    <path fill="#f33"
+                      d="M9.1 64c-1.9 0-3.6-1-4.5-2.6L8 58.2v.7c0 .3.1.6.3.8L24 44c7.4 0 14.1-1.2 18.3-3.1l5.8-3.4v4.6L11.7 63.3c-.7.5-1.6.7-2.6.7z"
+                      data-original="#ff3333" />
+                    <path fill="#0779e4"
+                      d="M9.1 4C8.5 4 8 4.5 8 5.1V36c0 4.4 7.2 8 16 8L5.5 62.5c-.9-.9-1.5-2.2-1.5-3.6V5.1C4 2.3 6.3 0 9.1 0z"
+                      data-original="#0779e4" />
+                    <path fill="#314a52"
+                      d="M8.3 4.3c.2-.2.5-.3.8-.3.2 0 .4.1.6.2l45.5 26.6c.5.2.8.7.8 1.2s-.3 1-.7 1.3l-11.4 6.6 2.9 2.9 10.4-6.1c1.7-1 2.7-2.8 2.7-4.7s-1-3.8-2.7-4.7L11.7.7C11 .2 10.1 0 9.1 0 7.7 0 6.4.6 5.5 1.5z"
+                      data-original="#314a52" />
+                  </svg>
+                  <div>
+                    <p class="text-[10px] text-white leading-none text-left font-medium">Get it on</p>
+                    Google Play
+                  </div>
+                </button>
+
+                <button type="button"
+                  class="px-4 py-2 cursor-pointer inline-flex items-center rounded-md text-white text-sm text-left tracking-wider border-none outline-none bg-black hover:bg-[#222]">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 fill-white inline mr-2" viewBox="0 0 22.773 22.773">
+                    <path
+                      d="M15.769 0h.162c.13 1.606-.483 2.806-1.228 3.675-.731.863-1.732 1.7-3.351 1.573-.108-1.583.506-2.694 1.25-3.561C13.292.879 14.557.16 15.769 0zm4.901 16.716v.045c-.455 1.378-1.104 2.559-1.896 3.655-.723.995-1.609 2.334-3.191 2.334-1.367 0-2.275-.879-3.676-.903-1.482-.024-2.297.735-3.652.926h-.462c-.995-.144-1.798-.932-2.383-1.642-1.725-2.098-3.058-4.808-3.306-8.276v-1.019c.105-2.482 1.311-4.5 2.914-5.478.846-.52 2.009-.963 3.304-.765.555.086 1.122.276 1.619.464.471.181 1.06.502 1.618.485.378-.011.754-.208 1.135-.347 1.116-.403 2.21-.865 3.652-.648 1.733.262 2.963 1.032 3.723 2.22-1.466.933-2.625 2.339-2.427 4.74.176 2.181 1.444 3.457 3.028 4.209z"
+                      data-original="#000000" />
+                  </svg>
+                  <div>
+                    <p class="text-[10px] text-white leading-none text-left font-medium">Download on the</p>
+                    App Store
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-emerald-600 text-sm font-medium">Contact us</h3>
+              <div class="flex items-center gap-x-8 gap-y-4 flex-wrap mt-4">
+                <div class="flex items-center">
+                  <div class="bg-gray-50 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-black" viewBox="0 0 482.6 482.6">
+                      <path
+                        d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"
+                        data-original="#000000" />
+                    </svg>
+                  </div>
+                  <a href="javascript:void(0)" class="text-slate-900 text-sm ml-3">
+                    <small class="block">Tel</small>
+                    <span class="font-medium">180-548-2588</span>
+                  </a>
+                </div>
+                <div class="flex items-center">
+                  <div class="bg-gray-50 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-black" viewBox="0 0 479.058 479.058">
+                      <path
+                        d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                        data-original="#000000" />
+                    </svg>
+                  </div>
+                  <a href="javascript:void(0)" class="text-slate-900 text-sm ml-3">
+                    <small class="block">Mail</small>
+                    <span class="font-medium">info@example.com</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#bbc5d0] px-6 py-4">
+        <div class="flex items-center justify-between flex-wrap max-sm:flex-col gap-6 max-w-screen-xl mx-auto">
+          <div class="max-sm:text-center">
+            <p class="text-slate-900 text-sm">© ReadymadeUI. All rights reserved.</p>
+          </div>
+          <div>
+            <ul class="flex justify-center space-x-5">
+              <li>
+                <a href='javascript:void(0)'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-600 w-8 h-8" viewBox="0 0 49.652 49.652">
+                    <path d="M24.826 0C11.137 0 0 11.137 0 24.826c0 13.688 11.137 24.826 24.826 24.826 13.688 0 24.826-11.138 24.826-24.826C49.652 11.137 38.516 0 24.826 0zM31 25.7h-4.039v14.396h-5.985V25.7h-2.845v-5.088h2.845v-3.291c0-2.357 1.12-6.04 6.04-6.04l4.435.017v4.939h-3.219c-.524 0-1.269.262-1.269 1.386v2.99h4.56z" data-original="#000000" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href='javascript:void(0)'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 112.196 112.196">
+                    <circle cx="56.098" cy="56.097" r="56.098" fill="#007ab9" data-original="#007ab9" />
+                    <path fill="#fff" d="M89.616 60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149zm-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967zm-6.791 59.77H41.27v-40.33H27.865v40.33z" data-original="#f1f2f2" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href='javascript:void(0)'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 152 152">
+                    <linearGradient id="a" x1="22.26" x2="129.74" y1="22.26" y2="129.74" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#fae100" />
+                      <stop offset=".15" stop-color="#fcb720" />
+                      <stop offset=".3" stop-color="#ff7950" />
+                      <stop offset=".5" stop-color="#ff1c74" />
+                      <stop offset="1" stop-color="#6c1cd1" />
+                    </linearGradient>
+                    <g data-name="Layer 2">
+                      <g data-name="03.Instagram">
+                        <rect width="152" height="152" fill="url(#a)" data-original="url(#a)" rx="76" />
+                        <g fill="#fff">
+                          <path fill="#ffffff10" d="M133.2 26c-11.08 20.34-26.75 41.32-46.33 60.9S46.31 122.12 26 133.2q-1.91-1.66-3.71-3.46A76 76 0 1 1 129.74 22.26q1.8 1.8 3.46 3.74z" data-original="#ffffff10" />
+                          <path d="M94 36H58a22 22 0 0 0-22 22v36a22 22 0 0 0 22 22h36a22 22 0 0 0 22-22V58a22 22 0 0 0-22-22zm15 54.84A18.16 18.16 0 0 1 90.84 109H61.16A18.16 18.16 0 0 1 43 90.84V61.16A18.16 18.16 0 0 1 61.16 43h29.68A18.16 18.16 0 0 1 109 61.16z" data-original="#ffffff" />
+                          <path d="m90.59 61.56-.19-.19-.16-.16A20.16 20.16 0 0 0 76 55.33 20.52 20.52 0 0 0 55.62 76a20.75 20.75 0 0 0 6 14.61 20.19 20.19 0 0 0 14.42 6 20.73 20.73 0 0 0 14.55-35.05zM76 89.56A13.56 13.56 0 1 1 89.37 76 13.46 13.46 0 0 1 76 89.56zm26.43-35.18a4.88 4.88 0 0 1-4.85 4.92 4.81 4.81 0 0 1-3.42-1.43 4.93 4.93 0 0 1 3.43-8.39 4.82 4.82 0 0 1 3.09 1.12l.1.1a3.05 3.05 0 0 1 .44.44l.11.12a4.92 4.92 0 0 1 1.1 3.12z" data-original="#ffffff" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href='javascript:void(0)'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 1227 1227">
+                    <path d="M613.5 0C274.685 0 0 274.685 0 613.5S274.685 1227 613.5 1227 1227 952.315 1227 613.5 952.315 0 613.5 0z" data-original="#000000" />
+                    <path fill="#fff" d="m680.617 557.98 262.632-305.288h-62.235L652.97 517.77 470.833 252.692H260.759l275.427 400.844-275.427 320.142h62.239l240.82-279.931 192.35 279.931h210.074L680.601 557.98zM345.423 299.545h95.595l440.024 629.411h-95.595z" data-original="#ffffff" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
+
 </html>
