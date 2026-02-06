@@ -4,8 +4,365 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <div class="contact-info">
+          <span> +01 987 654 3210</span>
+          <span> +01 987 654 3210</span>
+        </div>
+        <div class="tagline">World's Fastest Online Shopping Destination</div>
+        <div class="top-right">
+          <a href="#">Help?</a>
+          <a href="#">Track Order</a>
+          <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#">Dollar <i class="fa-solid fa-chevron-down"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-content">
+        <a href="home.html" class="logo">
+          <div class="logo-icon">
+            <img src="assets/image/grabitlogo.png" alt="GrabitLogo" />
+          </div>
+        </a>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Search Products..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Account</small
+              >
+              <span>Login</span>
+            </div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-regular fa-heart"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Wishlist</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+          <a href="#" class="header-action">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div>
+              <small style="display: block; font-size: 11px; color: #999"
+                >Cart</small
+              >
+              <span>3-ITEMS</span>
+            </div>
+            <div class="badge">3</div>
+          </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <nav id="navMenu">
+      <div class="nav-content">
+        <button class="categories-btn">☰ All Categories</button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="home.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="about.html">About <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="product.html">Products <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="blog.html">Blog <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="fashion.html">Fashion <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="left-sidebar.html">Shop <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="wishlist.html">Wishlist <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+        </ul>
+
+        <button class="location-selector">
+          <i class="fa-solid fa-location-dot"></i> New York
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+    </nav>
+
+<!-- main basladi -->
+
+
+
+<main class="grid grid-cols-[75%_25%] min-h-screen overflow-hidden rounded-xl  ">
+  <section class="  flex justify-around flex-wrap gap-4">
+     <div class="w-[400px] h-[400px] bg-white rounded-xl shadow-lg p-4 overflow-hidden shadow-cyan-800 hover:cursor-text">
+      <img src="assets/image/Figure.png" alt="" class="transition-transform duration-300 ease-in-out hover:scale-105 transform-3d">
+      <p>Marketing Guide: 5 Steps to Success to way.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+industry.</p>
+<h4 class="text-gray-700 hover:text-green-500 transition cursor-pointer hover:underline">Read More <i class="fa-solid fa-angles-right"></i></h4>
+    </div>
+     <div class="w-[400px] h-[400px] bg-white rounded-xl shadow-lg p-4 overflow-hidden  shadow-cyan-700">
+      <img src="assets/image/Figure (1).png" alt="" class="transition-transform duration-300 ease-in-out hover:scale-105">
+      <p>Best way to solve business deal issue in market.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+industry.</p>
+<h4 class="text-gray-700 hover:text-green-500 transition cursor-pointer hover:underline">Read More <i class="fa-solid fa-angles-right"></i></h4>
+    </div>
+    <div class="w-[400px] h-[400px] bg-white rounded-xl shadow-lg p-4 overflow-hidden shadow-cyan-700">
+      <img src="assets/image/Figure (2).png" alt="" class="transition-transform duration-300 ease-in-out hover:scale-105">
+      <p>31 grocery customer service stats know in 2019.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+industry.</p>
+<h4 class="text-gray-700 hover:text-green-500 transition cursor-pointer hover:underline">Read More <i class="fa-solid fa-angles-right"></i></h4>
+    </div>
+     <div class="w-[400px] h-[400px] bg-white rounded-xl shadow-lg p-4 overflow-hidden shadow-cyan-700">
+      <img src="assets/image/Figure (3).png" alt="" class="transition-transform duration-300 ease-in-out hover:scale-105">
+      <p>Business ideas to grow your business traffic.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+industry.</p>
+<h4 class="text-gray-700 hover:text-green-500 transition cursor-pointer hover:underline">Read More <i class="fa-solid fa-angles-right"></i></h4>
+    </div>
+     <div class="w-[400px] h-[400px] bg-white rounded-xl shadow-lg p-4 overflow-hidden shadow-cyan-700">
+      <img src="assets/image/5.jpg.png" alt="" class="transition-transform duration-300 ease-in-out hover:scale-105 hover:underline">
+      <p>Marketing Guide: 5 Steps way to Success.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+industry.</p>
+<h4 class="text-gray-700 hover:text-green-500 transition cursor-pointer hover:underline hover:transition-[4s]">Read More <i class="fa-solid fa-angles-right"></i></h4>
+    </div>
+     <div class="w-[400px] h-[400px] bg-white rounded-xl shadow-lg p-4 overflow-hidden shadow-cyan-700 ">
+      <img src="assets/image/Figure (4).png" alt="" class="transition-transform duration-300 ease-in-out hover:scale-105">
+      <p>15 customer service stats idea know in 2023.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+industry.</p>
+<h4 class="text-gray-700 hover:text-green-500 hover:underline transition cursor-pointer">Read More <i class="fa-solid fa-angles-right"></i></h4>
+    </div>
+  </section>
+
+ 
+
+  <aside class="overflow-hidden hidden md:block w-[360px]" >
+   <input type="text " class="w-full px-4 py-2 border rounded-md text-sm outline-none focus:border-green-500 h-[40px] placeholder:" >
+ 
+
+
+
+
+<div class="bg-white p-5 rounded-xl border gap-6">
+  <h3 class="text-lg font-semibold mb-5">Recent Articles</h3>
+
+  <ul class="flex flex-col gap-4">
+    <li class="flex gap-4">
+      <img src="assets/image/Figure (1).png" class="w-16 h-16 rounded object-cover" />
+      <div class="flex flex-col gap-1">
+        <p class="text-sm font-medium leading-snug">
+          The Best Fashion Influencers.
+        </p>
+        <span class="text-xs text-gray-400">
+          June 30, 2021–2022
+        </span>
+        <span class="text-xs text-green-500">
+          – Organic
+        </span>
+      </div>
+    </li>
+
+
+
+ <li class="flex gap-4">
+      <img src="assets/image/Figure.png" class="w-16 h-16 rounded object-cover" />
+      <div class="flex flex-col gap-1">
+        <p class="text-sm font-medium leading-snug">
+          Vogue Shopping Weekend.
+        </p>
+        <span class="text-xs text-gray-400">
+          April 02, 2021–2022
+        </span>
+        <span class="text-xs text-green-500">
+          – Fruits
+        </span>
+      </div>
+    </li>
+
+
+
+ <li class="flex gap-4">
+      <img src="assets/image/Figure (3).png" class="w-16 h-16 rounded object-cover" />
+      <div class="flex flex-col gap-1">
+        <p class="text-sm font-medium leading-snug">
+          Vogue Shopping Weekend.
+        </p>
+        <span class="text-xs text-gray-400">
+          April 02, 2021–2022
+        </span>
+        <span class="text-xs text-green-500">
+          – Fruits
+        </span>
+      </div>
+    </li>
+
+
+
+ <li class="flex gap-4">
+      <img src="assets/image/Figure (4).png" class="w-16 h-16 rounded object-cover" />
+      <div class="flex flex-col gap-1">
+        <p class="text-sm font-medium leading-snug">
+          Vogue Shopping Weekend.
+        </p>
+        <span class="text-xs text-gray-400">
+          April 02, 2021–2022
+        </span>
+        <span class="text-xs text-green-500">
+          – Fruits
+        </span>
+      </div>
+    </li>
+
+
+    <li class="flex gap-4">
+      <img src="assets/image/Figure (2).png" class="w-16 h-16 rounded object-cover" />
+      <div class="flex flex-col gap-1">
+        <p class="text-sm font-medium leading-snug">
+          Vogue Shopping Weekend.
+        </p>
+        <span class="text-xs text-gray-400">
+          April 02, 2021–2022
+        </span>
+        <span class="text-xs text-green-500">
+          – Fruits
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+   <div class="bg-white p-5 rounded-xl border">
+  <h3 class="text-lg font-semibold mb-4">Categories</h3>
+  <hr>
+
+  <ul class="flex flex-col gap-8 text-sm">
     
+    <li class="flex justify-between text-gray-600">
+     <input type="checkbox" class="w-3"> <span>Organic</span>
+      <span>(12)</span>
+    </li>
+    <li class="flex justify-between text-gray-600">
+      <input type="checkbox" class="w-3"> <span>Fastfood</span>
+      <span>(09)</span>
+    </li>
+    <li class="flex justify-between text-gray-600">
+    <input type="checkbox" class="w-3"> <span class="checked:">Vegetables</span>
+      <span>(15)</span>
+    </li>
+  </ul>
+</div>
+
+  </aside>
+</main>
+
+
+
+
+
+    <footer>
+  <div class="gra">
+    <div class="bit">
+      <div class="bitt">
+        <img src="assets/image/1cd5030c6543dd793ba6983d07fd7d95779e8adb (1).png" width="100px" alt="1cd">
+        <p>Grabit is the biggest market of grocery products
+Get your daily needs from our store.</p>
+<div>
+  <img src="assets/image/9b984d8c78222971cde2cf32ce6baeba2bedefa2 (1).png" width="140px" height="40px"   alt="984">
+   <img src="assets/image/4bf6e94388ab1f53cc6843297ab3609a1740d99f (1).png"  width="140px" height="40" alt="984">
+</div>
+      </div>
+    </div>
+    <div class="cote">
+      <h1 class="font-bold">Category</h1>
+      <ul>
+        <li>Dried Fruit</li>
+        <li>Cookies</li>
+        <li>Foods</li>
+        <li>Fresh Fruit</li>
+        <li>Tuber root</li>
+        <li>Vegetables</li>
+      </ul>
+    </div>
+  <div class="cote">
+      <h1 class="font-bold">Company</h1>
+      <ul>
+        <li>About us</li>
+        <li>Delivery</li>
+        <li>Legal Notice</li>
+        <li>Terms & conditions</li>
+        <li>Secure payment</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+
+    <div class="cote">
+      <h1 class="font-bold">Account</h1>
+      <ul>
+        <li>Sign In</li>
+        <li>View Cart</li>
+        <li>Return Policy</li>
+        <li>Become a Vendor</li>
+        <li>Affiliate Program</li>
+        <li>Payments</li>
+      </ul>
+    </div>
+
+    <div class="cont">
+      <h1 class="font-bold">Contact</h1>
+      <div><img src="assets/image/Icon (8).png" alt="8">2548 Broaddus Maple Court, Madisonville KY
+4783, USA.</div>
+  <div><img src="assets/image/Icon (9).png" alt="8">+00 9876543210</div>
+      <div><img src="assets/image/Icon (10).png" alt="8">example@email.com</div>
+      <div class="gap-10">
+   <i class="fa-brands fa-facebook "></i>
+   <i class="fa-brands fa-instagram"></i>
+   <i class="fa-brands fa-twitter"></i>
+      </div>
+
+    </div>
+ 
+    </div>
+  </div>
+  <div class="foicon">
+    <div class="all"><h1 style="font-size: 17px;">Copyright © Grabit all rights reserved. Powered by Grabit.</h1></div>
+    <div class="tiktok"><img class="tiktak" src="assets/image/587c250de43f60f20d2d0b1d46520a9ad9092a7e (1).png" alt="58"></div>
+  </div>
+</footer>
 </body>
 </html>
